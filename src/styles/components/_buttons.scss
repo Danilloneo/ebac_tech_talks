@@ -1,0 +1,26 @@
+.button {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap; //forçar o texto continuar na mesma linha
+    &--primary {
+        padding: 12px;
+        color: #fff;
+        background-color: #4F2AC3;
+    }
+
+    @media (max-width: 648px){
+        display: block;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px){
+        display: flex;
+        align-items: center;
+    }
+}
+
+//sobre nowrap X X X X no display flex quando usamos flex-warp: wrap; estamos dizendo quebre a linha
+//que por padrão o flex-wrap tem o valor nowrap ou seja permaneça junto, já o P ele tem por padrão a função wrap
+//de quebrar linha, e aplicando o nowrap estamos dizendo fique na mesma linha texto.
